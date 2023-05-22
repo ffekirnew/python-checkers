@@ -1,40 +1,40 @@
 from checkers.point import Point
 from checkers.enums import CheckerType, SideType
 
-# Сторона за яку грає гравець
+# Side for which the player is playing
 PLAYER_SIDE = SideType.WHITE
 
-# Розмір поля
+# Board size
 X_SIZE = Y_SIZE = 8
-# Розмір комірки (у пікселях)
+# Cell size (in pixels)
 CELL_SIZE = 75
 
-# Швидкість анімації (більше = швидше)
+# Animation speed (higher = faster)
 ANIMATION_SPEED = 4
 
-# Кількість ходів для передбачення
+# Number of moves to predict
 MAX_PREDICTION_DEPTH = 3
 
-# Ширина рамки (Бажано повинна бути парною)
+# Border width (preferably even)
 BORDER_WIDTH = 2 * 2
 
-# Кольори ігрової дошки
+# Game board colors
 FIELD_COLORS = ['#E7CFA9', '#927456']
-# Колір рамки при наведенні на клітинку мишкою
+# Border color when hovering over a cell with the mouse
 HOVER_BORDER_COLOR = '#54b346'
-# Колір рамки при виділенні комірки
+# Border color when a cell is selected
 SELECT_BORDER_COLOR = '#944444'
-# Колір кружків можливих ходів
-POSIBLE_MOVE_CIRCLE_COLOR = '#944444'
+# Color of circles indicating possible moves
+POSSIBLE_MOVE_CIRCLE_COLOR = '#944444'
 
-# Можливі зміщення ходів шашок
+# Possible move offsets for checkers
 MOVE_OFFSETS = [
     Point(-1, -1),
-    Point( 1, -1),
-    Point(-1,  1),
-    Point( 1,  1)
+    Point(1, -1),
+    Point(-1, 1),
+    Point(1, 1)
 ]
 
-# Масиви типів білих і чорних шашок [Звичайна пішак, дамка]
+# Arrays of checker types for white and black checkers [Regular, Queen]
 WHITE_CHECKERS = [CheckerType.WHITE_REGULAR, CheckerType.WHITE_QUEEN]
 BLACK_CHECKERS = [CheckerType.BLACK_REGULAR, CheckerType.BLACK_QUEEN]

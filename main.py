@@ -2,6 +2,7 @@ from tkinter import Tk, Canvas, PhotoImage
 from checkers.game import Game
 from checkers.constants import X_SIZE, Y_SIZE, CELL_SIZE
 
+
 def main():
     # Створення вікна
     main_window = Tk()
@@ -19,6 +20,7 @@ def main():
     main_canvas.bind("<Button-1>", game.mouse_down)
 
     main_window.mainloop()
+
 
 if __name__ == '__main__':
     main()

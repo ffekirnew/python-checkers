@@ -1,5 +1,6 @@
 from enum import Enum, auto
 
+
 class SideType(Enum):
     WHITE = auto()
     BLACK = auto()
@@ -9,7 +10,9 @@ class SideType(Enum):
             return SideType.BLACK
         elif (side == SideType.BLACK):
             return SideType.WHITE
-        else: raise ValueError()
+        else:
+            raise ValueError()
+
 
 class CheckerType(Enum):
     NONE = auto()

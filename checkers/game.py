@@ -103,7 +103,7 @@ class Game:
                                                       move.to_y * CELL_SIZE + CELL_SIZE / 3,
                                                       move.to_x * CELL_SIZE + (CELL_SIZE - CELL_SIZE / 3),
                                                       move.to_y * CELL_SIZE + (CELL_SIZE - CELL_SIZE / 3),
-                                                      fill=POSIBLE_MOVE_CIRCLE_COLOR, width=0,
+                                                      fill=POSSIBLE_MOVE_CIRCLE_COLOR, width=0,
                                                       tag='posible_move_circle')
 
     def __draw_checkers(self):
